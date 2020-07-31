@@ -1,16 +1,11 @@
 import { NgModule } from "@angular/core";
-import { LoginComponent, ContactusComponent } from '../_components/common';
+import { LoginComponent, ContactusComponent, SignupComponent } from '../_components/common';
 
 @NgModule({
   declarations:[
     LoginComponent,
+    SignupComponent,
     ContactusComponent
-  ],
-  imports:[
-
-  ],
-  exports:[
-
   ]
 })
 export class AppCommonModule{
