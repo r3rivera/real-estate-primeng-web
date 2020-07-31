@@ -6,8 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { MaterialModule } from './app.material.module';
-import { PrimeNgModule } from './app.primeng.module';
+import { MaterialModule, PrimeNgModule, AppCommonModule } from './_modules';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { PrimeNgModule } from './app.primeng.module';
     AppRoutingModule,
     HttpClientModule,
     PrimeNgModule,
-    MaterialModule
+    MaterialModule,
+    AppCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
