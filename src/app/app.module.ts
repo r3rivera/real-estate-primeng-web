@@ -6,17 +6,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { MaterialModule, PrimeNgModule, AppCommonModule } from './_modules';
 import { HeroComponent } from './_components/landing/hero/hero.component';
 import { LandingComponent } from './_components/landing/landing.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { ContactusComponent, LoginComponent, SignupComponent } from './_components/common';
+import { PrimeNgModule, MaterialModule } from './_modules';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroComponent,
-    LandingComponent
+    LandingComponent,
+    LoginComponent,
+    SignupComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     PrimeNgModule,
     MaterialModule,
-    AppCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

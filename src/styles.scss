@@ -1,2 +1,11 @@
+
+@import './assets/app.reset.stye.scss';
+
 /* You can add global styles to this file, and also import other style files */
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css'
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+/*
+Custome CSS
+*/
+@import './assets/app.login.style.scss';

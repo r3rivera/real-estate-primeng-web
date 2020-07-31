@@ -1,5 +1,35 @@
-<section>
-  <div class="">
-    LOGIN SECTION WORKS!
+<section id="LoginScreenSection" class="login-container">
+  <div class="login-panel">
+    <!--
+    <div class="login-panel-header">
+      Welcome, Please sign in.
+    </div>
+    -->
+    <div class="login-panel-content">
+      <form [formGroup]="loginForm" (ngSubmit)="onLoginUser()">
+        <div class="p-grid p-align-center">
+          <div class="p-col">
+            <mat-form-field style="width: 100%;">
+              <input matInput placeholder="Email address" type="email" formControlName="username">
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="p-grid p-align-center">
+          <div class="p-col">
+            <mat-form-field style="width: 100%;">
+              <input matInput placeholder="Password" type="password" formControlName="password">
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="p-grid p-align-center">
+          <div class="p-col">
+            <button class="login-panel-content-button" pButton type="button" label="Login" (click)="onLoginUser()"></button>
+          </div>
+        </div>
+
+      </form>
+    </div>
   </div>
 </section>
