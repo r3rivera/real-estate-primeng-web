@@ -8,5 +8,9 @@ export class AuthService {
 
   constructor(private _http : HttpClient) { }
 
+  authenticateUser(username: string, password: string) : void{
+    console.log("AuthService :: User is " + username + ", Password is " + password);
+
+  }
 
 }

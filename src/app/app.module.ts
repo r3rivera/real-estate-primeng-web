@@ -7,15 +7,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { MaterialModule, PrimeNgModule, AppCommonModule } from './_modules';
+import { HeroComponent } from './_components/landing/hero/hero.component';
+import { LandingComponent } from './_components/landing/landing.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     PrimeNgModule,

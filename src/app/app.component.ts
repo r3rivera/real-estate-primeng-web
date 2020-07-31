@@ -1,19 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html'
+  selector: 'r3app-root',
+  template: `<router-outlet></router-outlet>`
 })
-export class AppComponent {
-  title = 'Real Estate Property Management';
-
-  loginModal: boolean;
-  loginPosition: string;
-
-  showLoginDialog(position: string) : void{
-    console.log("Login Dialog");
-    this.loginModal = true;
-    this.loginPosition = position;
-  }
-
-}
+export class AppComponent {}
