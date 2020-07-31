@@ -2,9 +2,18 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'real-estate-primeng-web';
+  title = 'Real Estate Property Management';
+
+  loginModal: boolean;
+  loginPosition: string;
+
+  showLoginDialog(position: string) : void{
+    console.log("Login Dialog");
+    this.loginModal = true;
+    this.loginPosition = position;
+  }
+
 }
