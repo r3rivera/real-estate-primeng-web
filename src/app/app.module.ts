@@ -5,11 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
-import { DialogModule } from 'primeng/dialog';
+
 import { MaterialModule } from './app.material.module';
+import { PrimeNgModule } from './app.primeng.module';
 
 @NgModule({
   declarations: [
@@ -19,11 +17,8 @@ import { MaterialModule } from './app.material.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    TableModule,
     HttpClientModule,
-    InputTextModule,
-    DialogModule,
-    ButtonModule,
+    PrimeNgModule,
     MaterialModule
   ],
   providers: [],
