@@ -9,6 +9,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
+import { MaterialModule } from './app.material.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DialogModule } from 'primeng/dialog';
     HttpClientModule,
     InputTextModule,
     DialogModule,
-    ButtonModule
+    ButtonModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
