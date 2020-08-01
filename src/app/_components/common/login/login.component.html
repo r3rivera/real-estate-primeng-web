@@ -7,23 +7,25 @@
     -->
     <div class="login-panel-content">
       <form [formGroup]="loginForm" (ngSubmit)="onLoginUser()">
-        <div class="p-grid p-align-center">
+        <div class="p-grid p-align-center" style="padding-bottom: 5px;">
           <div class="p-col">
             <mat-form-field style="width: 100%;">
               <input matInput placeholder="Email address" type="email" formControlName="username">
+              <mat-error *ngIf="isValidUsername()">This is required.</mat-error>
             </mat-form-field>
           </div>
         </div>
 
-        <div class="p-grid p-align-center">
+        <div class="p-grid p-align-center" style="padding-bottom: 10px;">
           <div class="p-col">
             <mat-form-field style="width: 100%;">
               <input matInput placeholder="Password" type="password" formControlName="password">
+              <mat-error *ngIf="isValidUsername()">This is required.</mat-error>
             </mat-form-field>
           </div>
         </div>
 
-        <div class="p-grid p-align-center">
+        <div class="p-grid p-align-center" style="padding: 10px 0;">
           <div class="p-col">
             <button class="login-panel-content-button" pButton type="submit" label="LOGIN"></button>
           </div>
