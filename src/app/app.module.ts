@@ -11,6 +11,7 @@ import { LandingComponent } from './_components/landing/landing.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactusComponent, LoginComponent, SignupComponent } from './_components/common';
 import { PrimeNgModule, MaterialModule } from './_modules';
+import { DashboardComponent } from './_components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PrimeNgModule, MaterialModule } from './_modules';
     LandingComponent,
     LoginComponent,
     SignupComponent,
-    ContactusComponent
+    ContactusComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

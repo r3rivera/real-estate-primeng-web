@@ -38,15 +38,8 @@ export class LoginComponent implements OnInit {
 
   }
 
-  isValidUsername():boolean{
-    if(this.loginForm.get('username') && !this.loginForm.get('username').dirty){
-      return true;
-    }
-    return false;
-  }
-
-  isValidPassword():boolean{
-    if(this.loginForm.get('password') && !this.loginForm.get('password').dirty){
+  isValidField(field:string){
+    if(this.loginForm.get(field) && !this.loginForm.get(field).dirty){
       return true;
     }
     return false;
