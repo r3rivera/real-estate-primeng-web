@@ -38,8 +38,15 @@ export class LoginComponent implements OnInit {
 
   }
 
-  isValidField(field:string){
-    if(this.loginForm.get(field) && !this.loginForm.get(field).dirty){
+  isNotValidField(field:string){
+    if(this.loginSubmitted && this.loginForm.get(field) && this.loginForm.get(field).hasError('required')){
+      return true;
+    }
+    return false;
+  }
+
+  isNotValidEmailFiled(field:string){
+    if(this.loginSubmitted && this.loginForm.get(field) && this.loginForm.get(field).hasError('email')){
       return true;
     }
     return false;
