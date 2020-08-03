@@ -1,0 +1,30 @@
+
+.sidenav {
+
+  height: 100%;
+
+  &-container{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #909090;
+
+    &-side{
+      width: 150px;
+      background: #808080;
+
+    }
+  }
+
+  &-content{
+    height: 100vh;
+  }
+
+}
+
+
+
+

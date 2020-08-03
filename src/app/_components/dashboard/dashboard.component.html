@@ -1,1 +1,13 @@
-<p>dashboard works!</p>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" #sideNav role="navigation" class="sidenav-container-side">
+    Sidenav content
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <div><a (click)="sideNav.toggle()"><i class="pi pi-bars"></i></a></div>
+    </mat-toolbar>
+    <main>
+      Main content
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
